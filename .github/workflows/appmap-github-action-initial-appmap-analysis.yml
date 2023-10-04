@@ -25,7 +25,7 @@ jobs:
         id: install-appmap
         uses: getappmap/install-action@v1
         with:
-        project-type: maven
+          project-type: maven
                   
       - name: Run Tests
         run: mvn test
