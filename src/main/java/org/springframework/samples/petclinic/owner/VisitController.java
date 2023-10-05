@@ -66,7 +66,7 @@ class VisitController {
 		model.put("owner", owner);
 
 		Visit visit = new Visit();
-		//pet.addVisit(visit);
+		pet.addVisit(visit);
 		return visit;
 	}
 
