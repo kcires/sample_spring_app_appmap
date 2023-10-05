@@ -1,9 +1,7 @@
-name: Erick AppMap Github Action
+name: appmap-analysis-video
 
 on:
-  push:
-    branches:
-      - main
+  pull_request:
 
 jobs:
   build:
@@ -23,5 +21,11 @@ jobs:
       - name: Build with Maven
         run: mvn clean install
 
+      - name: Install AppMap tools
+        id: install-appmap
+        uses: getappmap/install-action@v1
+        with:
+          project-type: maven
+                  
       - name: Run Tests
         run: mvn test
