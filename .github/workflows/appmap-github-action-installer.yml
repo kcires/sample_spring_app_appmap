@@ -1,4 +1,4 @@
-name: Erick AppMap Installer
+name: Erick AppMap Github Action
 
 on:
   push:
